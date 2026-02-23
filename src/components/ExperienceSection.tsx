@@ -37,7 +37,7 @@ const ExperienceSection = () => {
             </p>
             <p className="text-xs text-muted-foreground italic">* Client names not disclosed due to NDA agreements</p>
           </div>
-          <div className="grid grid-cols-3 gap-8 items-start w-[480px] h-[150px] ml-24">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 items-start justify-items-start">
             {clientLogos.map((logo, index) => (
               <div 
                 key={logo.name} 

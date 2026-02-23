@@ -29,8 +29,8 @@ const WhatWeDoSection = () => {
               Visit Tea Basket <ArrowRight className="w-4 h-4" />
             </a>
           </div>
-          <div className="p-12 text-primary-foreground relative overflow-hidden flex items-start min-h-[280px]" style={{ background: 'linear-gradient(135deg, hsl(150, 50%, 20%), hsl(140, 60%, 25%))' }}>
-            <div className="relative z-10 w-1/2 flex flex-col pr-8">
+          <div className="p-6 md:p-12 text-primary-foreground relative overflow-hidden flex items-start min-h-[200px] md:min-h-[280px]" style={{ background: 'linear-gradient(135deg, hsl(150, 50%, 20%), hsl(140, 60%, 25%))' }}>
+            <div className="relative z-10 w-full md:w-1/2 flex flex-col pr-4 md:pr-8">
               <p className="text-xs opacity-80 mb-1">Flagship Venture</p>
               <h4 className="text-base font-semibold mb-3">Tea Basket</h4>
               <p className="text-xs opacity-90 mb-3">
@@ -40,7 +40,7 @@ const WhatWeDoSection = () => {
                 Tea Basket reflects our belief that quality should scale without losing its character.
               </p>
             </div>
-            <div className="absolute right-0 top-0 bottom-0 w-1/2">
+            <div className="absolute right-0 top-0 bottom-0 w-full md:w-1/2 opacity-30 md:opacity-100">
               <img src={powerImg} alt="Power" className="w-full h-full object-cover" />
             </div>
           </div>
@@ -48,7 +48,7 @@ const WhatWeDoSection = () => {
 
         {/* Digital Services */}
         <div id="services">
-          <div className="flex gap-8 items-start">
+          <div className="flex flex-col lg:flex-row gap-8 items-start">
             {/* Column 1 */}
             <div className="flex-1">
               <div className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center mb-4">

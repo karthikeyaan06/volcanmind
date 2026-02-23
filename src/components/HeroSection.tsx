@@ -33,15 +33,15 @@ const HeroSection = () => {
           </span>
         </div>
 
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-normal text-foreground leading-tight max-w-3xl mx-auto tracking-tight" style={{ fontFamily: '"Hiragino Mincho ProN", serif' }}>
+        <h1 className="text-3xl md:text-5xl lg:text-6xl font-normal text-foreground leading-tight max-w-3xl mx-auto tracking-tight" style={{ fontFamily: '"Hiragino Mincho ProN", serif' }}>
           Building digital systems for meaningful businesses
         </h1>
 
-        <p className="text-foreground text-xl md:text-2xl mt-6 max-w-2xl mx-auto font-normal">
-          Digital products and Digital services designed to <span className="font-bold">Endure</span>
+        <p className="text-foreground text-lg md:text-xl lg:text-2xl mt-6 max-w-2xl mx-auto font-normal">
+          Digital products and Digital services designed to <span className="font-bold">Endure</span>.
         </p>
 
-        <div className="flex items-center justify-center gap-4 mt-8">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
           <Button variant="outline" className="rounded-lg gap-2 px-5 border-2 border-gray-300 text-gray-600 hover:bg-primary hover:text-white hover:border-primary transition-colors">
             <span className="w-4 h-4 rounded-full border-2 border-gray-400 flex items-center justify-center group-hover:border-white">
               <Play className="w-1.5 h-1.5 text-gray-600" />
