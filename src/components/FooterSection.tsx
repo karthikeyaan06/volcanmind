@@ -22,10 +22,9 @@ const FooterSection = () => {
         <div className="flex flex-col md:flex-row md:items-start gap-8">
           <div className="flex-1">
             <div className="flex items-center gap-2 font-bold text-lg text-[hsl(var(--footer-heading))] mb-3">
-              <svg width="24" height="24" viewBox="0 0 32 32" fill="none">
-                <path d="M16 2L4 12L8 14L16 8L24 14L28 12L16 2Z" fill="currentColor"/>
-                <path d="M16 12L8 18V26L16 30L24 26V18L16 12Z" fill="currentColor" opacity="0.7"/>
-              </svg>
+              <div className="w-6 h-6 bg-white/20 rounded flex items-center justify-center text-[10px]">
+                Logo
+              </div>
               <span className="font-normal">VolcanMind</span>
             </div>
             <p className="text-sm opacity-70 max-w-xs">

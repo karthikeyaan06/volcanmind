@@ -34,11 +34,11 @@ const HeroSection = () => {
         </div>
 
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-normal text-foreground leading-tight max-w-3xl mx-auto tracking-tight" style={{ fontFamily: '"Hiragino Mincho ProN", serif' }}>
-          Building digital systems for meaningful businesses.
+          Building digital systems for meaningful businesses
         </h1>
 
-        <p className="text-muted-foreground text-lg mt-6 max-w-lg mx-auto">
-          Products and digital services designed to endure.
+        <p className="text-foreground text-xl md:text-2xl mt-6 max-w-2xl mx-auto font-normal">
+          Digital products and Digital services designed to <span className="font-bold">Endure</span>
         </p>
 
         <div className="flex items-center justify-center gap-4 mt-8">

@@ -21,10 +21,9 @@ const Navbar = () => {
     <header className="sticky top-0 z-50 bg-background/95 backdrop-blur border-b border-border">
       <div className="container mx-auto flex items-center h-16 px-6">
         <Link to="/" className="flex items-center gap-2 text-lg text-foreground">
-          <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
-            <path d="M16 2L4 12L8 14L16 8L24 14L28 12L16 2Z" fill="currentColor"/>
-            <path d="M16 12L8 18V26L16 30L24 26V18L16 12Z" fill="currentColor" opacity="0.7"/>
-          </svg>
+          <div className="w-8 h-8 bg-gray-200 rounded flex items-center justify-center text-xs text-gray-500">
+            Logo
+          </div>
           <span>Volcan<span className="font-bold">Mind</span></span>
         </Link>
 
@@ -61,7 +60,7 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Toggle */}
-        <button className="md:hidden" onClick={() => setMobileOpen(!mobileOpen)}>
+        <button className="md:hidden ml-auto" onClick={() => setMobileOpen(!mobileOpen)}>
           {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>
       </div>
