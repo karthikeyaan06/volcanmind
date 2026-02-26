@@ -397,7 +397,7 @@ const TeaBasket = () => {
         <div className="max-w-7xl mx-auto px-6 py-16">
           {/* Top Section */}
           <div className="mb-12">
-            <h3 className="text-2xl font-bold text-white mb-4">TeaBasket</h3>
+            <h3 className="text-2xl text-white mb-4"><span className="font-extralight">Tea</span><span className="font-bold">Basket</span></h3>
             <p className="text-gray-400 max-w-md leading-relaxed mb-3">
               Tea Basket is a curated tea marketplace built to support small producers and everyday tea drinkers.
             </p>
