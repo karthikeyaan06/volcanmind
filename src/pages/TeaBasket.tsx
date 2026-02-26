@@ -96,8 +96,8 @@ const TeaBasket = () => {
 
           <div className="grid md:grid-cols-3 gap-12 mt-16">
             <div>
-              <div className="w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4" style={{ backgroundColor: '#6B4E2E' }}>
-                <img src={smallBatchImage} alt="Small batch" className="w-12 h-12" />
+              <div className="w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 overflow-hidden" style={{ backgroundColor: '#6B4E2E' }}>
+                <img src={smallBatchImage} alt="Small batch" className="w-10 h-10 object-contain" />
               </div>
               <h3 className="text-lg font-semibold mb-2" style={{ color: '#1F3D2B' }}>Small-batch teas from trusted producers</h3>
               <p className="text-sm" style={{ color: '#9A9A95' }}>
@@ -105,8 +105,8 @@ const TeaBasket = () => {
               </p>
             </div>
             <div>
-              <div className="w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4" style={{ backgroundColor: '#6B4E2E' }}>
-                <img src={noIntimidationImage} alt="No intimidation" className="w-12 h-12" />
+              <div className="w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 overflow-hidden" style={{ backgroundColor: '#6B4E2E' }}>
+                <img src={noIntimidationImage} alt="No intimidation" className="w-10 h-10 object-contain" />
               </div>
               <h3 className="text-lg font-semibold mb-2" style={{ color: '#1F3D2B' }}>No intimidation, no unnecessary ceremony</h3>
               <p className="text-sm" style={{ color: '#9A9A95' }}>
@@ -114,8 +114,8 @@ const TeaBasket = () => {
               </p>
             </div>
             <div>
-              <div className="w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4" style={{ backgroundColor: '#6B4E2E' }}>
-                <img src={quicklyImage} alt="Quality" className="w-12 h-12" />
+              <div className="w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 overflow-hidden" style={{ backgroundColor: '#6B4E2E' }}>
+                <img src={quicklyImage} alt="Quality" className="w-10 h-10 object-contain" />
               </div>
               <h3 className="text-lg font-semibold mb-2" style={{ color: '#1F3D2B' }}>Quality you can rely on, cup after cup</h3>
               <p className="text-sm" style={{ color: '#9A9A95' }}>
