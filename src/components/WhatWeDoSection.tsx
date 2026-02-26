@@ -25,7 +25,7 @@ const WhatWeDoSection = () => {
             <p className="text-muted-foreground mb-6">
               Our focus is on creating systems that enable inclusive growth without sacrificing craft or intent.
             </p>
-            <a href="#" className="inline-flex items-center gap-2 border border-border rounded-lg px-4 py-2 text-sm font-medium text-foreground hover:bg-secondary transition-colors">
+            <a href="/teabasket" className="inline-flex items-center gap-2 border border-border rounded-lg px-4 py-2 text-sm font-medium text-foreground hover:bg-secondary transition-colors">
               Visit Tea Basket <ArrowRight className="w-4 h-4" />
             </a>
           </div>
