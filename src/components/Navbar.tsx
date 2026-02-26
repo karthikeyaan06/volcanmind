@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import mainLogo from "@/assets/main_logo/main_con.png";
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -21,9 +22,7 @@ const Navbar = () => {
     <header className="sticky top-0 z-50 bg-background/95 backdrop-blur border-b border-border">
       <div className="container mx-auto flex items-center h-16 px-6">
         <Link to="/" className="flex items-center gap-2 text-lg text-foreground">
-          <div className="w-8 h-8 bg-gray-200 rounded flex items-center justify-center text-xs text-gray-500">
-            Logo
-          </div>
+          <img src={mainLogo} alt="VolcanMind Logo" className="w-10 h-10 object-contain" />
           <span>Volcan<span className="font-bold">Mind</span></span>
         </Link>
 

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import mainLogo from "@/assets/main_logo/main_con.png";
 
 const footerLinks = ["Overview", "Features", "Pricing", "Careers", "Help", "Privacy"];
 
@@ -22,9 +23,7 @@ const FooterSection = () => {
         <div className="flex flex-col md:flex-row md:items-start gap-8">
           <div className="flex-1">
             <div className="flex items-center gap-2 font-bold text-lg text-[hsl(var(--footer-heading))] mb-3">
-              <div className="w-6 h-6 bg-white/20 rounded flex items-center justify-center text-[10px]">
-                Logo
-              </div>
+              <img src={mainLogo} alt="VolcanMind Logo" className="w-8 h-8 object-contain" />
               <span className="font-normal">VolcanMind</span>
             </div>
             <p className="text-sm opacity-70 max-w-xs">

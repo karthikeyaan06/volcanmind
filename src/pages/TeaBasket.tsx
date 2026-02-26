@@ -11,6 +11,7 @@ import tea4 from "@/assets/tea4.png";
 import smallBatchImage from "@/assets/page2/small-batch.png";
 import quicklyImage from "@/assets/page2/quickly.png";
 import noIntimidationImage from "@/assets/page2/No_intimidation.png";
+import mainLogo from "@/assets/main_logo/main_con.png";
 
 const TeaBasket = () => {
   return (
@@ -33,9 +34,7 @@ const TeaBasket = () => {
               {/* Left: Logo and Nav Links */}
               <div className="flex items-center gap-8">
                 <div className="flex items-center gap-2">
-                  <div className="w-8 h-8 bg-white/20 rounded flex items-center justify-center text-xs text-white">
-                    Logo
-                  </div>
+                  <img src={mainLogo} alt="TeaBasket Logo" className="w-10 h-10 object-contain" />
                   <span className="text-white text-lg"><span className="font-light">Tea</span><span className="font-semibold">Basket</span></span>
                 </div>
                 
@@ -65,9 +64,7 @@ const TeaBasket = () => {
             <div className="md:hidden flex flex-col gap-4">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2">
-                  <div className="w-8 h-8 bg-white/20 rounded flex items-center justify-center text-xs text-white">
-                    Logo
-                  </div>
+                  <img src={mainLogo} alt="TeaBasket Logo" className="w-10 h-10 object-contain" />
                   <span className="text-white text-lg"><span className="font-light">Tea</span><span className="font-semibold">Basket</span></span>
                 </div>
                 <Link to="/">
@@ -94,12 +91,12 @@ const TeaBasket = () => {
         {/* Hero Content */}
         <div className="relative z-10 flex items-center justify-center min-h-[calc(100vh-80px)] px-6">
           <div className="text-center text-white max-w-4xl">
-            <p className="text-sm font-medium mb-6 tracking-wide">Teabasket</p>
+            <p className="text-sm font-medium mb-6 tracking-wide">TeaBasket</p>
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight" style={{ fontFamily: 'Literata, serif' }}>
-              Better tea,<br />made accessible.
+              Better tea,<br />made accessible
             </h1>
             <p className="text-lg md:text-xl mb-10 text-gray-200 max-w-3xl mx-auto">
-              Small-batch teas from dedicated producers, curated for everyday drinking.
+              Tea from dedicated producers, curated for everyday drinking
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -119,7 +116,7 @@ const TeaBasket = () => {
         <div className="max-w-6xl mx-auto px-6 text-center">
           <p className="text-sm tracking-wide" style={{ color: '#5E7C5A' }}>Why Tea Basket</p>
           <h2 className="text-4xl md:text-5xl font-bold mt-4" style={{ fontFamily: 'Literata, serif', color: '#1F3D2B' }}>
-            Good tea doesn't need to be complicated.
+            Good tea doesn't need to be complicated
           </h2>
           <p className="text-lg mt-6 max-w-2xl mx-auto" style={{ color: '#9A9A95' }}>
             Tea Basket brings together small producers who focus on quality and consistency so you can enjoy better tea every day, without needing to be an expert.
@@ -130,9 +127,9 @@ const TeaBasket = () => {
               <div className="w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 overflow-hidden" style={{ backgroundColor: '#6B4E2E' }}>
                 <img src={smallBatchImage} alt="Small batch" className="w-10 h-10 object-contain" />
               </div>
-              <h3 className="text-lg font-semibold mb-2" style={{ color: '#1F3D2B' }}>Small-batch teas from trusted producers</h3>
+              <h3 className="text-lg font-semibold mb-2" style={{ color: '#1F3D2B' }}>Teas from trusted producers</h3>
               <p className="text-sm" style={{ color: '#9A9A95' }}>
-                Whether you have a team of 2 or 200, our shared team inboxes keep everyone on the same page and in the loop.
+                Small-lot teas nurtured by dedicated farmers — the tea is produced in small quantities, not mass-produced, and is sourced from reliable, high-quality tea makers.
               </p>
             </div>
             <div>
@@ -174,25 +171,25 @@ const TeaBasket = () => {
                 <div>
                   <h3 className="font-semibold text-lg" style={{ color: '#1F3D2B' }}>Black Teas</h3>
                   <p className="mt-2 leading-relaxed" style={{ color: '#9A9A95' }}>
-                    Bold, balanced teas with depth and warmth. Ideal for mornings and daily routines, enjoyed plain or with milk.
+                    Bold, balanced teas with depth and warmth. Ideal for mornings and daily routines, enjoyed plain or with milk
                   </p>
                 </div>
                 <div>
                   <h3 className="font-semibold text-lg" style={{ color: '#1F3D2B' }}>Green Teas</h3>
                   <p className="mt-2 leading-relaxed" style={{ color: '#9A9A95' }}>
-                    Fresh, light, and clean-tasting. Perfect when you want something gentle, refreshing, and easy on the palate.
+                    Fresh, light, and clean-tasting. Perfect when you want something gentle, refreshing, and easy on the palate
                   </p>
                 </div>
                 <div>
                   <h3 className="font-semibold text-lg" style={{ color: '#1F3D2B' }}>Herbal Infusions</h3>
                   <p className="mt-2 leading-relaxed" style={{ color: '#9A9A95' }}>
-                    Naturally caffeine-free blends made from herbs, flowers, and spices. Comforting, calming, and suited for any time of day.
+                    Naturally caffeine-free blends made from herbs, flowers, and spices. Comforting, calming, and suited for any time of day
                   </p>
                 </div>
                 <div>
                   <h3 className="font-semibold text-lg" style={{ color: '#1F3D2B' }}>Everyday Blends</h3>
                   <p className="mt-2 leading-relaxed" style={{ color: '#9A9A95' }}>
-                    Thoughtfully combined teas designed for consistency and ease. Reliable flavors you can come back to, cup after cup.
+                    Thoughtfully combined teas designed for consistency and ease. Reliable flavors you can come back to, cup after cup
                   </p>
                 </div>
               </div>
@@ -215,7 +212,7 @@ const TeaBasket = () => {
         <div className="max-w-7xl mx-auto px-6">
           <p className="text-center text-sm tracking-wide" style={{ color: '#5E7C5A' }}>Featured Teas</p>
           <h2 className="text-center text-4xl md:text-5xl font-bold mt-4" style={{ fontFamily: 'Literata, serif', color: '#1F3D2B' }}>
-            Carefully selected teas,<br />available in limited quantities.
+            Carefully selected teas,<br />available in limited quantities
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
@@ -226,7 +223,7 @@ const TeaBasket = () => {
                 <p className="text-sm" style={{ color: '#6B7280' }}>Black</p>
                 <h3 className="text-xl font-bold text-gray-900 mt-2">Morning Gold</h3>
                 <p className="text-sm text-gray-600 mt-2 leading-relaxed">
-                  A robust black tea with malty notes, perfect for starting your day.
+                  A robust black tea with malty notes, perfect for starting your day
                 </p>
                 <p className="text-lg font-bold text-gray-900 mt-4">₹ 200</p>
                 <button className="mt-4 px-4 py-2 rounded-md border-2 flex items-center gap-2 transition-all" style={{ borderColor: '#5E7C5A', color: '#5E7C5A' }}>
@@ -243,7 +240,7 @@ const TeaBasket = () => {
                 <p className="text-sm" style={{ color: '#6B7280' }}>Green</p>
                 <h3 className="text-xl font-bold text-gray-900 mt-2">Spring Mist</h3>
                 <p className="text-sm text-gray-600 mt-2 leading-relaxed">
-                  Light and refreshing green tea with delicate floral notes.
+                  Light and refreshing green tea with delicate floral notes
                 </p>
                 <p className="text-lg font-bold text-gray-900 mt-4">₹ 250</p>
                 <button className="mt-4 px-4 py-2 rounded-md border-2 flex items-center gap-2 transition-all" style={{ borderColor: '#5E7C5A', color: '#5E7C5A' }}>
@@ -260,7 +257,7 @@ const TeaBasket = () => {
                 <p className="text-sm" style={{ color: '#6B7280' }}>Herbal</p>
                 <h3 className="text-xl font-bold text-gray-900 mt-2">Evening Calm</h3>
                 <p className="text-sm text-gray-600 mt-2 leading-relaxed">
-                  Soothing herbal blend with chamomile and lavender for relaxation.
+                  Soothing herbal blend with chamomile and lavender for relaxation
                 </p>
                 <p className="text-lg font-bold text-gray-900 mt-4">₹ 180</p>
                 <button className="mt-4 px-4 py-2 rounded-md border-2 flex items-center gap-2 transition-all" style={{ borderColor: '#5E7C5A', color: '#5E7C5A' }}>
@@ -277,7 +274,7 @@ const TeaBasket = () => {
                 <p className="text-sm" style={{ color: '#6B7280' }}>Blend</p>
                 <h3 className="text-xl font-bold text-gray-900 mt-2">Daily Blend</h3>
                 <p className="text-sm text-gray-600 mt-2 leading-relaxed">
-                  Balanced everyday tea with consistent flavor, cup after cup.
+                  Balanced everyday tea with consistent flavor, cup after cup
                 </p>
                 <p className="text-lg font-bold text-gray-900 mt-4">₹ 220</p>
                 <button className="mt-4 px-4 py-2 rounded-md border-2 flex items-center gap-2 transition-all" style={{ borderColor: '#5E7C5A', color: '#5E7C5A' }}>
@@ -304,7 +301,7 @@ const TeaBasket = () => {
             Made by People Who Care About Tea
           </h2>
           <p className="text-lg mt-6 leading-relaxed" style={{ color: '#9A9A95' }}>
-            Behind every tea is a producer who understands their land, climate, and craft.<br />We work with producers who take responsibility for the quality of their tea so you get honesty, transparency, and consistency.
+            We work hand-in-hand with farmer-producers who personally oversee every step of cultivation, ensuring honesty, transparency, and consistent quality in every cup
           </p>
         </div>
 
@@ -359,7 +356,7 @@ const TeaBasket = () => {
 
           {/* Subheading */}
           <p className="text-lg mb-12" style={{ color: '#9A9A95' }}>
-            Good tea should fit naturally into your routine.
+            Good tea should fit naturally into your routine
           </p>
 
           {/* Product Image */}
@@ -382,8 +379,8 @@ const TeaBasket = () => {
         <div className="max-w-6xl mx-auto px-6 mt-20">
           <div className="rounded-2xl p-12 flex flex-col md:flex-row items-center justify-between gap-6" style={{ backgroundColor: '#6B4E2E' }}>
             <div className="text-white text-left">
-              <h3 className="text-3xl font-bold mb-2">Explore our collection and find your everyday tea.</h3>
-              <p className="text-lg opacity-90">Good tea should fit naturally into your routine.</p>
+              <h3 className="text-3xl font-bold mb-2">Explore our collection and find your everyday tea</h3>
+              <p className="text-lg opacity-90">Good tea should fit naturally into your routine</p>
             </div>
             <button className="px-6 py-3 rounded-md bg-white text-gray-900 hover:bg-gray-100 transition-colors whitespace-nowrap">
               View All Teas →
@@ -399,10 +396,10 @@ const TeaBasket = () => {
           <div className="mb-12">
             <h3 className="text-2xl text-white mb-4"><span className="font-extralight">Tea</span><span className="font-bold">Basket</span></h3>
             <p className="text-gray-400 max-w-md leading-relaxed mb-3">
-              Tea Basket is a curated tea marketplace built to support small producers and everyday tea drinkers.
+              Tea Basket is a curated tea marketplace built to support small producers and everyday tea drinkers
             </p>
             <p className="text-sm" style={{ color: '#B87333' }}>
-              Built and operated by Volcanmind.
+              Built and operated by Volcanmind
             </p>
           </div>
 
@@ -420,7 +417,7 @@ const TeaBasket = () => {
 
           {/* Bottom Row */}
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-gray-500 text-sm">© 2026 TeaBasket. All rights reserved.</p>
+            <p className="text-gray-500 text-sm">© 2026 TeaBasket. All rights reserved</p>
             <div className="flex items-center gap-6">
               <a href="#" className="text-gray-400 hover:text-white transition-colors" aria-label="X/Twitter">
                 <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>

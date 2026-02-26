@@ -17,11 +17,11 @@ const TeaHero = () => {
         </p>
 
         <h1 className="text-4xl md:text-6xl font-serif font-semibold leading-tight mb-6">
-          Better tea,<br /> made accessible.
+          Better tea,<br /> made accessible
         </h1>
 
         <p className="text-lg opacity-90 mb-8">
-          Small-batch teas from dedicated producers, curated for everyday drinking.
+          Teas from dedicated producers, curated for everyday drinking
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
