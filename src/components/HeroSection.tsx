@@ -11,7 +11,8 @@ const HeroSection = () => {
     <section className="pt-12 pb-0 overflow-hidden relative">
       <div className="absolute inset-0 opacity-60 bottom-1/3" style={{backgroundImage: 'radial-gradient(circle, rgba(150,150,150,0.4) 1.5px, transparent 1.5px)', backgroundSize: '20px 20px', maskImage: 'radial-gradient(ellipse 70% 70% at 50% 30%, black 30%, transparent 80%)', WebkitMaskImage: 'radial-gradient(ellipse 70% 70% at 50% 30%, black 30%, transparent 80%)'}}></div>
       <div className="container mx-auto px-6 text-center relative z-10 mb-8">
-        <div 
+        <a
+          href="mailto:murari@volcanmind.com?subject=Application%20for%20Engineering%20Position%20at%20VolcanMind"
           className="inline-flex items-center rounded-full cursor-pointer transition-all duration-300 group overflow-hidden mb-6"
           style={{
             height: '40px',
@@ -31,7 +32,7 @@ const HeroSection = () => {
             Join our engineering team
             <ArrowRight className="transition-transform duration-300 group-hover:translate-x-1" style={{ width: '14px', height: '14px', marginLeft: '6px' }} strokeWidth={1.5} />
           </span>
-        </div>
+        </a>
 
         <h1 className="text-3xl md:text-5xl lg:text-6xl font-normal text-foreground leading-tight max-w-3xl mx-auto tracking-tight" style={{ fontFamily: '"Hiragino Mincho ProN", serif' }}>
           Building digital systems for meaningful businesses
@@ -42,12 +43,6 @@ const HeroSection = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
-          <Button variant="outline" className="rounded-lg gap-2 px-5 border-2 border-gray-300 text-gray-600 hover:bg-primary hover:text-white hover:border-primary transition-colors">
-            <span className="w-4 h-4 rounded-full border-2 border-gray-400 flex items-center justify-center group-hover:border-white">
-              <Play className="w-1.5 h-1.5 text-gray-600" />
-            </span>
-            Showreel
-          </Button>
           <Button onClick={() => scrollTo("products")} className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-lg px-6">
             Explore what we build
           </Button>

@@ -17,7 +17,7 @@ const TeaHero = () => {
         </p>
 
         <h1 className="text-4xl md:text-6xl font-serif font-semibold leading-tight mb-6">
-          Better tea,<br /> made accessible
+          Better tea<br /> made accessible
         </h1>
 
         <p className="text-lg opacity-90 mb-8">

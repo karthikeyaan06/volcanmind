@@ -93,7 +93,7 @@ const TeaBasket = () => {
           <div className="text-center text-white max-w-4xl">
             <p className="text-sm font-medium mb-6 tracking-wide">TeaBasket</p>
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight" style={{ fontFamily: 'Literata, serif' }}>
-              Better tea,<br />made accessible
+              Better tea<br />made accessible
             </h1>
             <p className="text-lg md:text-xl mb-10 text-gray-200 max-w-3xl mx-auto">
               Tea from dedicated producers, curated for everyday drinking
@@ -114,7 +114,7 @@ const TeaBasket = () => {
       {/* Why Tea Basket Section */}
       <section className="py-24" style={{ backgroundColor: '#FAF7F2' }}>
         <div className="max-w-6xl mx-auto px-6 text-center">
-          <p className="text-sm tracking-wide" style={{ color: '#5E7C5A' }}>Why Tea Basket</p>
+          <p className="text-sm tracking-wide" style={{ color: '#5E7C5A' }}>Why TeaBasket</p>
           <h2 className="text-4xl md:text-5xl font-bold mt-4" style={{ fontFamily: 'Literata, serif', color: '#1F3D2B' }}>
             Good tea doesn't need to be complicated
           </h2>
@@ -212,7 +212,7 @@ const TeaBasket = () => {
         <div className="max-w-7xl mx-auto px-6">
           <p className="text-center text-sm tracking-wide" style={{ color: '#5E7C5A' }}>Featured Teas</p>
           <h2 className="text-center text-4xl md:text-5xl font-bold mt-4" style={{ fontFamily: 'Literata, serif', color: '#1F3D2B' }}>
-            Carefully selected teas,<br />available in limited quantities
+            Carefully selected teas<br />available in limited quantities
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
@@ -316,7 +316,7 @@ const TeaBasket = () => {
                 <span className="text-2xl font-bold text-white">1</span>
               </div>
               <p className="text-lg font-semibold" style={{ color: '#1F3D2B' }}>
-                Producers focus on growing and making great tea
+                Grown with care and free from pesticides, our tea begins in the hands of dedicated farmers.
               </p>
             </div>
 
@@ -325,7 +325,7 @@ const TeaBasket = () => {
                 <span className="text-2xl font-bold text-white">2</span>
               </div>
               <p className="text-lg font-semibold" style={{ color: '#1F3D2B' }}>
-                We curate and test each tea for quality and consistency
+                Those very farmers transform each harvest into freshly crafted batches of tea.
               </p>
             </div>
 
@@ -334,7 +334,7 @@ const TeaBasket = () => {
                 <span className="text-2xl font-bold text-white">3</span>
               </div>
               <p className="text-lg font-semibold" style={{ color: '#1F3D2B' }}>
-                You enjoy better tea without needing to be an expert
+                All you have to do is savor the experience — we’ve taken care of the rest.
               </p>
             </div>
           </div>
@@ -346,7 +346,7 @@ const TeaBasket = () => {
         <div className="max-w-5xl mx-auto px-6 text-center">
           {/* Pill Badge */}
           <div className="inline-block px-4 py-2 rounded-full border mb-6" style={{ backgroundColor: '#FAF7F2', borderColor: '#9A9A95' }}>
-            <span className="text-sm" style={{ color: '#6B4E2E' }}>Tea Basket is built for daily use.</span>
+            <span className="text-sm" style={{ color: '#6B4E2E' }}>TeaBasket is built for daily use.</span>
           </div>
 
           {/* Heading */}
@@ -396,7 +396,7 @@ const TeaBasket = () => {
           <div className="mb-12">
             <h3 className="text-2xl text-white mb-4"><span className="font-extralight">Tea</span><span className="font-bold">Basket</span></h3>
             <p className="text-gray-400 max-w-md leading-relaxed mb-3">
-              Tea Basket is a curated tea marketplace built to support small producers and everyday tea drinkers
+              TeaBasket is a curated tea marketplace built to support small producers and everyday tea drinkers
             </p>
             <p className="text-sm" style={{ color: '#B87333' }}>
               Built and operated by Volcanmind
