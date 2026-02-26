@@ -27,35 +27,66 @@ const TeaBasket = () => {
 
         {/* Navbar */}
         <nav className="relative z-50 sticky top-0 backdrop-blur-sm">
-          <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-            {/* Left: Logo and Nav Links */}
-            <div className="flex items-center gap-8">
-              <div className="flex items-center gap-2">
-                <div className="w-8 h-8 bg-white/20 rounded flex items-center justify-center text-xs text-white">
-                  Logo
+          <div className="max-w-7xl mx-auto px-6 py-4">
+            {/* Desktop Layout */}
+            <div className="hidden md:flex items-center justify-between">
+              {/* Left: Logo and Nav Links */}
+              <div className="flex items-center gap-8">
+                <div className="flex items-center gap-2">
+                  <div className="w-8 h-8 bg-white/20 rounded flex items-center justify-center text-xs text-white">
+                    Logo
+                  </div>
+                  <span className="text-white text-lg"><span className="font-light">Tea</span><span className="font-semibold">Basket</span></span>
                 </div>
-                <span className="text-white text-lg"><span className="font-light">Tea</span><span className="font-semibold">Basket</span></span>
+                
+                {/* Nav Links */}
+                <div className="flex items-center gap-6 text-white">
+                  <a href="#" className="hover:text-gray-300 transition-colors">All teas</a>
+                  <a href="#" className="hover:text-gray-300 transition-colors">Producers</a>
+                  <a href="#" className="hover:text-gray-300 transition-colors">About</a>
+                </div>
               </div>
               
-              {/* Nav Links */}
-              <div className="hidden md:flex items-center gap-6 text-white">
-                <a href="#" className="hover:text-gray-300 transition-colors">All teas</a>
-                <a href="#" className="hover:text-gray-300 transition-colors">Producers</a>
-                <a href="#" className="hover:text-gray-300 transition-colors">About</a>
+              {/* Right: Cart and Button */}
+              <div className="flex items-center gap-4">
+                <a href="#" className="flex items-center gap-2 text-white hover:text-gray-300 transition-colors">
+                  <span>Cart</span>
+                  <ShoppingCart className="w-5 h-5" />
+                </a>
+                <Link to="/">
+                  <Button className="bg-white/90 text-gray-900 hover:bg-white rounded-md px-5 border-2 border-white">
+                    ← Volcanmind
+                  </Button>
+                </Link>
               </div>
             </div>
-            
-            {/* Right: Cart and Button */}
-            <div className="flex items-center gap-4">
-              <a href="#" className="flex items-center gap-2 text-white hover:text-gray-300 transition-colors">
-                <span>Cart</span>
-                <ShoppingCart className="w-5 h-5" />
-              </a>
-              <Link to="/">
-                <Button className="bg-white/90 text-gray-900 hover:bg-white rounded-md px-5 border-2 border-white">
-                  ← Volcanmind
-                </Button>
-              </Link>
+
+            {/* Mobile Layout */}
+            <div className="md:hidden flex flex-col gap-4">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <div className="w-8 h-8 bg-white/20 rounded flex items-center justify-center text-xs text-white">
+                    Logo
+                  </div>
+                  <span className="text-white text-lg"><span className="font-light">Tea</span><span className="font-semibold">Basket</span></span>
+                </div>
+                <Link to="/">
+                  <Button className="bg-white/90 text-gray-900 hover:bg-white rounded-md px-3 py-2 text-sm border-2 border-white">
+                    ← Volcanmind
+                  </Button>
+                </Link>
+              </div>
+              <div className="flex items-center justify-between text-white text-sm">
+                <div className="flex items-center gap-4">
+                  <a href="#" className="hover:text-gray-300 transition-colors">All teas</a>
+                  <a href="#" className="hover:text-gray-300 transition-colors">Producers</a>
+                  <a href="#" className="hover:text-gray-300 transition-colors">About</a>
+                </div>
+                <a href="#" className="flex items-center gap-1 hover:text-gray-300 transition-colors">
+                  <span>Cart</span>
+                  <ShoppingCart className="w-4 h-4" />
+                </a>
+              </div>
             </div>
           </div>
         </nav>
