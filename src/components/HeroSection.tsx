@@ -12,7 +12,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 opacity-60 bottom-1/3" style={{backgroundImage: 'radial-gradient(circle, rgba(150,150,150,0.4) 1.5px, transparent 1.5px)', backgroundSize: '20px 20px', maskImage: 'radial-gradient(ellipse 70% 70% at 50% 30%, black 30%, transparent 80%)', WebkitMaskImage: 'radial-gradient(ellipse 70% 70% at 50% 30%, black 30%, transparent 80%)'}}></div>
       <div className="container mx-auto px-6 text-center relative z-10 mb-8">
         <a
-          href="mailto:murari@volcanmind.com?subject=Application%20for%20Engineering%20Position%20at%20VolcanMind"
+          href="mailto:info@volcanmind.com?subject=Application%20for%20Engineering%20Position%20at%20VolcanMind"
           className="inline-flex items-center rounded-full cursor-pointer transition-all duration-300 group overflow-hidden mb-6"
           style={{
             height: '40px',

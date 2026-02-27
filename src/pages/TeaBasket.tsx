@@ -138,7 +138,7 @@ const TeaBasket = () => {
               </div>
               <h3 className="text-lg font-semibold mb-2" style={{ color: '#1F3D2B' }}>No intimidation, no unnecessary ceremony</h3>
               <p className="text-sm" style={{ color: '#9A9A95' }}>
-                An all-in-one customer service platform that helps you balance everything your customers need to be happy.
+                Buying and enjoying the tea is simple and approachable.We make good tea simple and accessible.
               </p>
             </div>
             <div>
@@ -147,7 +147,7 @@ const TeaBasket = () => {
               </div>
               <h3 className="text-lg font-semibold mb-2" style={{ color: '#1F3D2B' }}>Quality you can rely on, cup after cup</h3>
               <p className="text-sm" style={{ color: '#9A9A95' }}>
-                Measure what matters with Untitled's easy-to-use reports. You can filter, export, and drilldown on the data in a couple clicks.
+                Each batch tastes as good as the previous one.A dependable daily tea experience.
               </p>
             </div>
           </div>
