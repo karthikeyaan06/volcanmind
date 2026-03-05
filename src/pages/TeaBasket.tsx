@@ -10,7 +10,7 @@ import tea4 from "@/assets/tea4.png";
 import smallBatchImage from "@/assets/page2/small-batch.png";
 import quicklyImage from "@/assets/page2/quickly.png";
 import noIntimidationImage from "@/assets/page2/No_intimidation.png";
-import mainLogo from "@/assets/main_logo/main_con.png";
+import teaBasketLogo from "@/assets/main_logo/TeaBasket_Logo-removebg-preview.png";
 
 const TeaBasket = () => {
   return (
@@ -33,7 +33,7 @@ const TeaBasket = () => {
               {/* Left: Logo and Nav Links */}
               <div className="flex items-center gap-8">
                 <div className="flex items-center gap-2">
-                  <img src={mainLogo} alt="TeaBasket Logo" className="w-10 h-10 object-contain" />
+                  <img src={teaBasketLogo} alt="TeaBasket Logo" className="w-10 h-10 object-contain" />
                   <span className="text-white text-lg"><span className="font-light">Tea</span><span className="font-semibold">Basket</span></span>
                 </div>
                 
@@ -63,7 +63,7 @@ const TeaBasket = () => {
             <div className="md:hidden flex flex-col gap-4">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2">
-                  <img src={mainLogo} alt="TeaBasket Logo" className="w-10 h-10 object-contain" />
+                  <img src={teaBasketLogo} alt="TeaBasket Logo" className="w-10 h-10 object-contain" />
                   <span className="text-white text-lg"><span className="font-light">Tea</span><span className="font-semibold">Basket</span></span>
                 </div>
                 <Link to="/">
