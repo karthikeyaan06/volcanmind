@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import teaPackImage from "@/assets/tea_pack.png";
@@ -13,6 +13,12 @@ import noIntimidationImage from "@/assets/page2/No_intimidation.png";
 import teaBasketLogo from "@/assets/main_logo/TeaBasket_Logo-removebg-preview.png";
 
 const TeaBasket = () => {
+  const navigate = useNavigate();
+
+  const handleAddToCart = () => {
+    navigate('/teas-collection');
+  };
+
   return (
     <div className="min-h-screen">
       {/* Hero Section with Background */}
@@ -199,8 +205,8 @@ const TeaBasket = () => {
             </div>
 
             {/* Right Column */}
-            <div className="overflow-hidden rounded-2xl shadow-lg">
-              <img src={teaPackImage} alt="Tea collection" className="w-full h-full object-cover" />
+            <div className="overflow-hidden rounded-2xl shadow-lg flex items-center justify-center">
+              <img src={teaBasketLogo} alt="TeaBasket Logo" className="w-full h-full object-contain p-12" />
             </div>
           </div>
         </div>
@@ -225,7 +231,7 @@ const TeaBasket = () => {
                   A robust black tea with malty notes, perfect for starting your day
                 </p>
                 <p className="text-lg font-bold text-gray-900 mt-4">₹ 200</p>
-                <button className="mt-4 px-4 py-2 rounded-md border-2 flex items-center gap-2 transition-all" style={{ borderColor: '#5E7C5A', color: '#5E7C5A' }}>
+                <button onClick={handleAddToCart} className="mt-4 px-4 py-2 rounded-md border-2 flex items-center gap-2 transition-all" style={{ borderColor: '#5E7C5A', color: '#5E7C5A' }}>
                   <ShoppingCart className="w-4 h-4" />
                   Add to cart
                 </button>
@@ -242,7 +248,7 @@ const TeaBasket = () => {
                   Light and refreshing green tea with delicate floral notes
                 </p>
                 <p className="text-lg font-bold text-gray-900 mt-4">₹ 250</p>
-                <button className="mt-4 px-4 py-2 rounded-md border-2 flex items-center gap-2 transition-all" style={{ borderColor: '#5E7C5A', color: '#5E7C5A' }}>
+                <button onClick={handleAddToCart} className="mt-4 px-4 py-2 rounded-md border-2 flex items-center gap-2 transition-all" style={{ borderColor: '#5E7C5A', color: '#5E7C5A' }}>
                   <ShoppingCart className="w-4 h-4" />
                   Add to cart
                 </button>
@@ -259,7 +265,7 @@ const TeaBasket = () => {
                   Soothing herbal blend with chamomile and lavender for relaxation
                 </p>
                 <p className="text-lg font-bold text-gray-900 mt-4">₹ 180</p>
-                <button className="mt-4 px-4 py-2 rounded-md border-2 flex items-center gap-2 transition-all" style={{ borderColor: '#5E7C5A', color: '#5E7C5A' }}>
+                <button onClick={handleAddToCart} className="mt-4 px-4 py-2 rounded-md border-2 flex items-center gap-2 transition-all" style={{ borderColor: '#5E7C5A', color: '#5E7C5A' }}>
                   <ShoppingCart className="w-4 h-4" />
                   Add to cart
                 </button>
@@ -276,7 +282,7 @@ const TeaBasket = () => {
                   Balanced everyday tea with consistent flavor, cup after cup
                 </p>
                 <p className="text-lg font-bold text-gray-900 mt-4">₹ 220</p>
-                <button className="mt-4 px-4 py-2 rounded-md border-2 flex items-center gap-2 transition-all" style={{ borderColor: '#5E7C5A', color: '#5E7C5A' }}>
+                <button onClick={handleAddToCart} className="mt-4 px-4 py-2 rounded-md border-2 flex items-center gap-2 transition-all" style={{ borderColor: '#5E7C5A', color: '#5E7C5A' }}>
                   <ShoppingCart className="w-4 h-4" />
                   Add to cart
                 </button>
