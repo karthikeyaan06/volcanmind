@@ -17,6 +17,7 @@ const TeaBasket = () => {
 
   const handleAddToCart = () => {
     navigate('/teas-collection');
+    window.scrollTo(0, 0);
   };
 
   return (
