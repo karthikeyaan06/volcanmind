@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
-import { ShoppingCart, Leaf, Zap, BarChart3 } from "lucide-react";
+import { ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import teaPackImage from "@/assets/tea_pack.png";
-import webTeaImage from "@/assets/webTea.png";
 import heroBackImage from "@/assets/Hero_back.png";
 import tea1 from "@/assets/tea1.png";
 import tea2 from "@/assets/tea2.png";
@@ -91,7 +90,7 @@ const TeaBasket = () => {
         {/* Hero Content */}
         <div className="relative z-10 flex items-center justify-center min-h-[calc(100vh-80px)] px-6">
           <div className="text-center text-white max-w-4xl">
-            <p className="text-sm font-medium mb-6 tracking-wide">TeaBasket</p>
+            <p className="text-2xl font-bold italic mb-6 tracking-wide">TeaBasket</p>
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight" style={{ fontFamily: 'Literata, serif' }}>
               Better tea<br />made accessible
             </h1>
@@ -114,7 +113,7 @@ const TeaBasket = () => {
       {/* Why Tea Basket Section */}
       <section className="py-24" style={{ backgroundColor: '#FAF7F2' }}>
         <div className="max-w-6xl mx-auto px-6 text-center">
-          <p className="text-sm tracking-wide" style={{ color: '#5E7C5A' }}>Why TeaBasket</p>
+          <p className="text-2xl font-bold italic tracking-wide" style={{ color: '#5E7C5A' }}>Why TeaBasket</p>
           <h2 className="text-4xl md:text-5xl font-bold mt-4" style={{ fontFamily: 'Literata, serif', color: '#1F3D2B' }}>
             Good tea doesn't need to be complicated
           </h2>
@@ -334,57 +333,9 @@ const TeaBasket = () => {
                 <span className="text-2xl font-bold text-white">3</span>
               </div>
               <p className="text-lg font-semibold" style={{ color: '#1F3D2B' }}>
-                All you have to do is savor the experience — we’ve taken care of the rest.
+                All you have to do is savor the experience — we've taken care of the rest.
               </p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Hero + CTA Section */}
-      <section className="py-24" style={{ backgroundColor: '#f6f6f6' }}>
-        <div className="max-w-5xl mx-auto px-6 text-center">
-          {/* Pill Badge */}
-          <div className="inline-block px-4 py-2 rounded-full border mb-6" style={{ backgroundColor: '#FAF7F2', borderColor: '#9A9A95' }}>
-            <span className="text-sm" style={{ color: '#6B4E2E' }}>TeaBasket is built for daily use.</span>
-          </div>
-
-          {/* Heading */}
-          <h2 className="text-4xl md:text-5xl font-bold mb-4" style={{ fontFamily: 'Literata, serif', color: '#1F3D2B' }}>
-            Everyday Premium, by Design
-          </h2>
-
-          {/* Subheading */}
-          <p className="text-lg mb-12" style={{ color: '#9A9A95' }}>
-            Good tea should fit naturally into your routine
-          </p>
-
-          {/* Product Image */}
-          <div className="mb-8">
-            <img src={webTeaImage} alt="Tea Basket Collection" className="mx-auto max-w-2xl w-full rounded-lg shadow-lg" />
-          </div>
-
-          {/* Feature Text */}
-          <p className="text-sm mb-8" style={{ color: '#6B4E2E' }}>
-            Prices that feel fair  •  Quality that stays consistent  •  Teas you'll come back to, not just try once
-          </p>
-
-          {/* Button */}
-          <button className="px-6 py-3 rounded-md border-2 border-gray-300 bg-white text-gray-700 hover:bg-gray-100 transition-colors">
-            View All Teas →
-          </button>
-        </div>
-
-        {/* Bottom CTA Block */}
-        <div className="max-w-6xl mx-auto px-6 mt-20">
-          <div className="rounded-2xl p-12 flex flex-col md:flex-row items-center justify-between gap-6" style={{ backgroundColor: '#6B4E2E' }}>
-            <div className="text-white text-left">
-              <h3 className="text-3xl font-bold mb-2">Explore our collection and find your everyday tea</h3>
-              <p className="text-lg opacity-90">Good tea should fit naturally into your routine</p>
-            </div>
-            <button className="px-6 py-3 rounded-md bg-white text-gray-900 hover:bg-gray-100 transition-colors whitespace-nowrap">
-              View All Teas →
-            </button>
           </div>
         </div>
       </section>
