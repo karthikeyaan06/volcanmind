@@ -11,15 +11,16 @@ const TeasCollection = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
-      <nav className="bg-white border-b">
+      <nav className="bg-white border-b sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-6 py-4">
-          <div className="flex items-center justify-between">
+          {/* Desktop Layout */}
+          <div className="hidden md:flex items-center justify-between">
             <div className="flex items-center gap-8">
               <div className="flex items-center gap-2">
                 <img src={teaBasketLogo} alt="TeaBasket Logo" className="w-10 h-10 object-contain" />
                 <span className="text-lg"><span className="font-light">Tea</span><span className="font-semibold">Basket</span></span>
               </div>
-              <div className="hidden md:flex items-center gap-6">
+              <div className="flex items-center gap-6">
                 <a href="#" className="hover:text-gray-600 transition-colors">All teas</a>
                 <a href="#" className="hover:text-gray-600 transition-colors">Producers</a>
                 <a href="#" className="hover:text-gray-600 transition-colors">About</a>
@@ -30,11 +31,37 @@ const TeasCollection = () => {
                 <span>Cart</span>
                 <ShoppingCart className="w-5 h-5" />
               </a>
-              <Link to="/teabasket">
+              <Link to="/">
                 <Button variant="outline" className="rounded-md">
                   ← Volcanmind
                 </Button>
               </Link>
+            </div>
+          </div>
+
+          {/* Mobile Layout */}
+          <div className="md:hidden flex flex-col gap-3">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-2">
+                <img src={teaBasketLogo} alt="TeaBasket Logo" className="w-10 h-10 object-contain" />
+                <span className="text-lg"><span className="font-light">Tea</span><span className="font-semibold">Basket</span></span>
+              </div>
+              <Link to="/">
+                <Button variant="outline" className="rounded-md text-sm px-3 py-2">
+                  ← Volcanmind
+                </Button>
+              </Link>
+            </div>
+            <div className="flex items-center justify-between text-sm">
+              <div className="flex items-center gap-4">
+                <a href="#" className="hover:text-gray-600 transition-colors">All teas</a>
+                <a href="#" className="hover:text-gray-600 transition-colors">Producers</a>
+                <a href="#" className="hover:text-gray-600 transition-colors">About</a>
+              </div>
+              <a href="#" className="flex items-center gap-1 hover:text-gray-600 transition-colors">
+                <span>Cart</span>
+                <ShoppingCart className="w-4 h-4" />
+              </a>
             </div>
           </div>
         </div>
@@ -64,7 +91,7 @@ const TeasCollection = () => {
           {/* Right Column - Product Details */}
           <div className="space-y-6">
             <p className="text-sm text-gray-600">Balanced. Clean. Everyday.</p>
-            <h1 className="text-4xl font-bold text-gray-900">Nilgiri Orthodox Black Tea</h1>
+            <h1 className="text-4xl font-bold text-gray-900" style={{ fontFamily: 'Literata, serif' }}>Nilgiri Orthodox Black Tea</h1>
             <p className="text-gray-700 leading-relaxed">
               A bright and smooth black tea from the Nilgiri hills, perfect for your daily routine. This orthodox tea offers a clean, lightly malty flavor that works beautifully on its own or with milk.
             </p>

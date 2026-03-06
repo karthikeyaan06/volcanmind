@@ -67,7 +67,7 @@ const TeaBasket = () => {
             </div>
 
             {/* Mobile Layout */}
-            <div className="md:hidden flex flex-col gap-4">
+            <div className="md:hidden flex flex-col gap-3">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2">
                   <img src={teaBasketLogo} alt="TeaBasket Logo" className="w-10 h-10 object-contain" />
