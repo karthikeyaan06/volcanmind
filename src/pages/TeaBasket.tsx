@@ -47,19 +47,19 @@ const TeaBasket = () => {
                 </div>
                 
                 {/* Nav Links */}
-                <div className="flex items-center gap-6 text-white">
+                {/* <div className="flex items-center gap-6 text-white">
                   <a href="#" className="hover:text-gray-300 transition-colors">All teas</a>
                   <a href="#" className="hover:text-gray-300 transition-colors">Producers</a>
                   <a href="#" className="hover:text-gray-300 transition-colors">About</a>
-                </div>
+                </div> */}
               </div>
               
               {/* Right: Cart and Button */}
               <div className="flex items-center gap-4">
-                <a href="#" className="flex items-center gap-2 text-white hover:text-gray-300 transition-colors">
+                {/* <a href="#" className="flex items-center gap-2 text-white hover:text-gray-300 transition-colors">
                   <span>Cart</span>
                   <ShoppingCart className="w-5 h-5" />
-                </a>
+                </a> */}
                 <Link to="/">
                   <Button className="bg-white/90 text-gray-900 hover:bg-white rounded-md px-5 border-2 border-white">
                     ← Volcanmind
@@ -70,17 +70,17 @@ const TeaBasket = () => {
 
             {/* Mobile Layout */}
             <div className="md:hidden flex items-center justify-between">
-              <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-white p-2">
+              {/* <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-white p-2">
                 <Menu className="w-6 h-6" />
-              </button>
+              </button> */}
               <div className="flex items-center gap-2">
                 <img src={teaBasketLogo} alt="TeaBasket Logo" className="w-10 h-10 object-contain" />
                 <span className="text-white text-lg"><span className="font-light">Tea</span><span className="font-semibold">Basket</span></span>
               </div>
               <div className="flex items-center gap-3">
-                <a href="#" className="text-white">
+                {/* <a href="#" className="text-white">
                   <ShoppingCart className="w-5 h-5" />
-                </a>
+                </a> */}
                 <Link to="/">
                   <Button className="bg-white/90 text-gray-900 hover:bg-white rounded-md px-3 py-2 text-xs border-2 border-white">
                     ← VM
@@ -91,7 +91,7 @@ const TeaBasket = () => {
           </div>
 
           {/* Mobile Drawer Menu */}
-          <div className={`fixed top-0 left-0 h-full w-64 bg-gray-100 transform transition-transform duration-300 ease-in-out z-50 ${isMenuOpen ? 'translate-x-0' : '-translate-x-full'}`}>
+          {/* <div className={`fixed top-0 left-0 h-full w-64 bg-gray-100 transform transition-transform duration-300 ease-in-out z-50 ${isMenuOpen ? 'translate-x-0' : '-translate-x-full'}`}>
             <div className="p-6">
               <button onClick={() => setIsMenuOpen(false)} className="mb-8">
                 <X className="w-6 h-6" />
@@ -102,12 +102,12 @@ const TeaBasket = () => {
                 <a href="#" className="text-gray-800 hover:text-blue-600 text-lg">About</a>
               </nav>
             </div>
-          </div>
+          </div> */}
 
           {/* Overlay */}
-          {isMenuOpen && (
+          {/* {isMenuOpen && (
             <div onClick={() => setIsMenuOpen(false)} className="fixed inset-0 bg-black/50 z-40" />
-          )}
+          )} */}
         </nav>
 
         {/* Hero Content */}
@@ -121,14 +121,14 @@ const TeaBasket = () => {
               Tea from dedicated producers, curated for everyday drinking
             </p>
             
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            {/* <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Button className="text-white hover:opacity-90 rounded-md px-8 py-6 text-lg" style={{ backgroundColor: '#1F3D2B' }}>
                 Shop teas →
               </Button>
               <Button variant="outline" className="bg-transparent text-white border-2 border-white hover:bg-white hover:text-gray-900 rounded-md px-8 py-6 text-lg transition-all">
                 Explore Our Teas
               </Button>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -216,9 +216,9 @@ const TeaBasket = () => {
                 </div>
               </div>
 
-              <button className="mt-8 px-5 py-3 rounded-md border transition-colors text-white" style={{ backgroundColor: '#5E7C5A', borderColor: '#5E7C5A' }}>
+              {/* <button className="mt-8 px-5 py-3 rounded-md border transition-colors text-white" style={{ backgroundColor: '#5E7C5A', borderColor: '#5E7C5A' }}>
                 View All Teas →
-              </button>
+              </button> */}
             </div>
 
             {/* Right Column */}
@@ -248,10 +248,10 @@ const TeaBasket = () => {
                   A robust black tea with malty notes, perfect for starting your day
                 </p>
                 <p className="text-lg font-bold text-gray-900 mt-4">₹ 200</p>
-                <button onClick={handleAddToCart} className="mt-4 px-4 py-2 rounded-md border-2 flex items-center gap-2 transition-all" style={{ borderColor: '#5E7C5A', color: '#5E7C5A' }}>
+                {/* <button onClick={handleAddToCart} className="mt-4 px-4 py-2 rounded-md border-2 flex items-center gap-2 transition-all" style={{ borderColor: '#5E7C5A', color: '#5E7C5A' }}>
                   <ShoppingCart className="w-4 h-4" />
                   Add to cart
-                </button>
+                </button> */}
               </div>
             </div>
 
@@ -265,10 +265,10 @@ const TeaBasket = () => {
                   Light and refreshing green tea with delicate floral notes
                 </p>
                 <p className="text-lg font-bold text-gray-900 mt-4">₹ 250</p>
-                <button onClick={handleAddToCart} className="mt-4 px-4 py-2 rounded-md border-2 flex items-center gap-2 transition-all" style={{ borderColor: '#5E7C5A', color: '#5E7C5A' }}>
+                {/* <button onClick={handleAddToCart} className="mt-4 px-4 py-2 rounded-md border-2 flex items-center gap-2 transition-all" style={{ borderColor: '#5E7C5A', color: '#5E7C5A' }}>
                   <ShoppingCart className="w-4 h-4" />
                   Add to cart
-                </button>
+                </button> */}
               </div>
             </div>
 
@@ -282,10 +282,10 @@ const TeaBasket = () => {
                   Soothing herbal blend with chamomile and lavender for relaxation
                 </p>
                 <p className="text-lg font-bold text-gray-900 mt-4">₹ 180</p>
-                <button onClick={handleAddToCart} className="mt-4 px-4 py-2 rounded-md border-2 flex items-center gap-2 transition-all" style={{ borderColor: '#5E7C5A', color: '#5E7C5A' }}>
+                {/* <button onClick={handleAddToCart} className="mt-4 px-4 py-2 rounded-md border-2 flex items-center gap-2 transition-all" style={{ borderColor: '#5E7C5A', color: '#5E7C5A' }}>
                   <ShoppingCart className="w-4 h-4" />
                   Add to cart
-                </button>
+                </button> */}
               </div>
             </div>
 
@@ -299,19 +299,19 @@ const TeaBasket = () => {
                   Balanced everyday tea with consistent flavor, cup after cup
                 </p>
                 <p className="text-lg font-bold text-gray-900 mt-4">₹ 220</p>
-                <button onClick={handleAddToCart} className="mt-4 px-4 py-2 rounded-md border-2 flex items-center gap-2 transition-all" style={{ borderColor: '#5E7C5A', color: '#5E7C5A' }}>
+                {/* <button onClick={handleAddToCart} className="mt-4 px-4 py-2 rounded-md border-2 flex items-center gap-2 transition-all" style={{ borderColor: '#5E7C5A', color: '#5E7C5A' }}>
                   <ShoppingCart className="w-4 h-4" />
                   Add to cart
-                </button>
+                </button> */}
               </div>
             </div>
           </div>
 
-          <div className="text-center mt-12">
+          {/* <div className="text-center mt-12">
             <button className="px-6 py-3 rounded-md border-2 border-gray-300 bg-white text-gray-700 hover:bg-gray-100 transition-colors">
               View All Teas →
             </button>
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -378,13 +378,13 @@ const TeaBasket = () => {
           </div>
 
           {/* Navigation Links */}
-          <div className="flex flex-wrap gap-6 mb-12">
+          {/* <div className="flex flex-wrap gap-6 mb-12">
             <a href="#" className="text-gray-400 hover:text-white transition-colors">All Teas</a>
             <a href="#" className="text-gray-400 hover:text-white transition-colors">Producers</a>
             <a href="#" className="text-gray-400 hover:text-white transition-colors">About</a>
             <a href="#" className="text-gray-400 hover:text-white transition-colors">Help</a>
             <a href="#" className="text-gray-400 hover:text-white transition-colors">Privacy</a>
-          </div>
+          </div> */}
 
           {/* Divider */}
           <div className="border-t border-gray-700 mb-8"></div>
@@ -392,7 +392,7 @@ const TeaBasket = () => {
           {/* Bottom Row */}
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-500 text-sm">© 2026 TeaBasket. All rights reserved</p>
-            <div className="flex items-center gap-6">
+            {/* <div className="flex items-center gap-6">
               <a href="#" className="text-gray-400 hover:text-white transition-colors" aria-label="X/Twitter">
                 <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
               </a>
@@ -402,7 +402,7 @@ const TeaBasket = () => {
               <a href="#" className="text-gray-400 hover:text-white transition-colors" aria-label="Facebook">
                 <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </footer>
