@@ -1,5 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
-import { ShoppingCart } from "lucide-react";
+import { ShoppingCart, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import teaPackImage from "@/assets/tea_pack.png";
 import heroBackImage from "@/assets/Hero_back.png";
@@ -11,9 +11,11 @@ import smallBatchImage from "@/assets/page2/small-batch.png";
 import quicklyImage from "@/assets/page2/quickly.png";
 import noIntimidationImage from "@/assets/page2/No_intimidation.png";
 import teaBasketLogo from "@/assets/main_logo/TeaBasket_Logo-removebg-preview.png";
+import { useState } from "react";
 
 const TeaBasket = () => {
   const navigate = useNavigate();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleAddToCart = () => {
     navigate('/teas-collection');
@@ -67,31 +69,45 @@ const TeaBasket = () => {
             </div>
 
             {/* Mobile Layout */}
-            <div className="md:hidden flex flex-col gap-3">
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-2">
-                  <img src={teaBasketLogo} alt="TeaBasket Logo" className="w-10 h-10 object-contain" />
-                  <span className="text-white text-lg"><span className="font-light">Tea</span><span className="font-semibold">Basket</span></span>
-                </div>
+            <div className="md:hidden flex items-center justify-between">
+              <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-white p-2">
+                <Menu className="w-6 h-6" />
+              </button>
+              <div className="flex items-center gap-2">
+                <img src={teaBasketLogo} alt="TeaBasket Logo" className="w-10 h-10 object-contain" />
+                <span className="text-white text-lg"><span className="font-light">Tea</span><span className="font-semibold">Basket</span></span>
+              </div>
+              <div className="flex items-center gap-3">
+                <a href="#" className="text-white">
+                  <ShoppingCart className="w-5 h-5" />
+                </a>
                 <Link to="/">
-                  <Button className="bg-white/90 text-gray-900 hover:bg-white rounded-md px-3 py-2 text-sm border-2 border-white">
-                    ← Volcanmind
+                  <Button className="bg-white/90 text-gray-900 hover:bg-white rounded-md px-3 py-2 text-xs border-2 border-white">
+                    ← VM
                   </Button>
                 </Link>
               </div>
-              <div className="flex items-center justify-between text-white text-sm">
-                <div className="flex items-center gap-4">
-                  <a href="#" className="hover:text-gray-300 transition-colors">All teas</a>
-                  <a href="#" className="hover:text-gray-300 transition-colors">Producers</a>
-                  <a href="#" className="hover:text-gray-300 transition-colors">About</a>
-                </div>
-                <a href="#" className="flex items-center gap-1 hover:text-gray-300 transition-colors">
-                  <span>Cart</span>
-                  <ShoppingCart className="w-4 h-4" />
-                </a>
-              </div>
             </div>
           </div>
+
+          {/* Mobile Drawer Menu */}
+          <div className={`fixed top-0 left-0 h-full w-64 bg-gray-100 transform transition-transform duration-300 ease-in-out z-50 ${isMenuOpen ? 'translate-x-0' : '-translate-x-full'}`}>
+            <div className="p-6">
+              <button onClick={() => setIsMenuOpen(false)} className="mb-8">
+                <X className="w-6 h-6" />
+              </button>
+              <nav className="flex flex-col space-y-6">
+                <a href="#" className="text-gray-800 hover:text-blue-600 text-lg">All teas</a>
+                <a href="#" className="text-gray-800 hover:text-blue-600 text-lg">Producers</a>
+                <a href="#" className="text-gray-800 hover:text-blue-600 text-lg">About</a>
+              </nav>
+            </div>
+          </div>
+
+          {/* Overlay */}
+          {isMenuOpen && (
+            <div onClick={() => setIsMenuOpen(false)} className="fixed inset-0 bg-black/50 z-40" />
+          )}
         </nav>
 
         {/* Hero Content */}
