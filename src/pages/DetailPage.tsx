@@ -1,4 +1,4 @@
-import { useState } from "react";
+﻿import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ShoppingCart, Heart, Search, X, Facebook, Linkedin, Twitter } from "lucide-react";
 import teaBasketLogo from "@/assets/main_logo/TeaBasket_Logo-removebg-preview.png";
@@ -63,6 +63,7 @@ const ProductCard = ({ product }: { product: typeof allProducts[0] }) => {
 };
 
 const DetailPage = () => {
+  useEffect(() => { window.scrollTo(0, 0); }, []);
   const [search, setSearch] = useState("");
   const [selectedTypes, setSelectedTypes] = useState<string[]>([]);
   const [selectedBestFor, setSelectedBestFor] = useState<string[]>([]);
@@ -79,7 +80,7 @@ const DetailPage = () => {
   });
 
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col">
+    <div className="min-h-screen bg-gray-50">
 
       {/* Header */}
       <header className="bg-white border-b sticky top-0 z-50">
@@ -107,7 +108,7 @@ const DetailPage = () => {
       </header>
 
       {/* Page Title Section */}
-      <div className="bg-white border-b">
+      <div className="bg-white border-b sticky top-[73px] z-40" style={{position: 'sticky', top: '73px'}}>
         <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row md:items-center justify-between gap-4">
           <div>
             <p className="text-sm text-gray-400 mb-1">All Teas</p>
@@ -133,7 +134,7 @@ const DetailPage = () => {
       </div>
 
       {/* Main Layout */}
-      <div className="max-w-7xl mx-auto px-6 py-8 flex gap-8 flex-1 w-full">
+      <div className="max-w-7xl mx-auto px-6 py-8 flex gap-8 w-full">
 
         {/* Sidebar Filters */}
         <aside className="hidden md:block w-56 flex-shrink-0">
@@ -209,7 +210,7 @@ const DetailPage = () => {
       </div>
 
       {/* Footer */}
-      <footer style={{ backgroundColor: "#0b1220" }} className="text-gray-400 mt-auto">
+      <footer style={{ backgroundColor: "#0b1220" }} className="text-gray-400">
         <div className="max-w-7xl mx-auto px-6 py-12">
           <div className="flex flex-col md:flex-row gap-10 justify-between">
             <div className="max-w-xs">

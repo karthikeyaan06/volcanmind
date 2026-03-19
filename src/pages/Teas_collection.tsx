@@ -1,4 +1,4 @@
-﻿import { Link, useLocation } from "react-router-dom";
+﻿import { Link, useLocation, useNavigate } from "react-router-dom";
 import { ShoppingCart, ChevronRight, Check, ArrowRight, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import teaBasketLogo from "@/assets/main_logo/TeaBasket_Logo-removebg-preview.png";
@@ -9,6 +9,7 @@ import tea4 from "@/assets/tea4.png";
 import { useState } from "react";
 
 const TeasCollection = () => {
+  const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
   const product = location.state || { image: tea1, name: 'Nilgiri Orthodox Black Tea', price: '₹ 200', type: 'Black' };
@@ -389,7 +390,7 @@ const TeasCollection = () => {
           </div>
 
           <div className="text-center mt-12">
-            <Link to="/all-teas" className="border rounded-md px-6 py-3 hover:bg-gray-100 transition inline-block">View All Teas</Link>
+            <button onClick={() => { window.scrollTo(0, 0); navigate('/all-teas'); }} className="border rounded-md px-6 py-3 hover:bg-gray-100 transition inline-block">View All Teas</button>
           </div>
         </div>
       </section>
