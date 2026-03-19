@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { ShoppingCart, ChevronRight, Check, ArrowRight, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import teaBasketLogo from "@/assets/main_logo/TeaBasket_Logo-removebg-preview.png";
@@ -10,6 +10,8 @@ import { useState } from "react";
 
 const TeasCollection = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
+  const product = location.state || { image: tea1, name: 'Nilgiri Orthodox Black Tea', price: '₹ 200', type: 'Black' };
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -102,21 +104,20 @@ const TeasCollection = () => {
         <div className="grid md:grid-cols-2 gap-12">
           {/* Left Column - Product Image */}
           <div className="bg-white rounded-xl shadow-lg p-8">
-            <img src={tea1} alt="Nilgiri Orthodox Black Tea" className="w-full h-auto object-contain" />
+            <img src={product.image} alt={product.name} className="w-full h-auto object-contain" />
           </div>
 
           {/* Right Column - Product Details */}
           <div className="space-y-6">
             <p className="text-sm text-gray-600">Balanced. Clean. Everyday.</p>
-            <h1 className="text-4xl font-bold text-gray-900" style={{ fontFamily: 'Literata, serif' }}>Nilgiri Orthodox Black Tea</h1>
+            <h1 className="text-4xl font-bold text-gray-900" style={{ fontFamily: 'Literata, serif' }}>{product.name}</h1>
             <p className="text-gray-700 leading-relaxed">
               A bright and smooth black tea from the Nilgiri hills, perfect for your daily routine. This orthodox tea offers a clean, lightly malty flavor that works beautifully on its own or with milk.
             </p>
 
             {/* Pricing */}
             <div className="flex items-center gap-3">
-              <span className="text-sm text-green-600 font-semibold">-60% ₹399</span>
-              <span className="text-gray-500 line-through">MRP ₹499</span>
+              <span className="text-lg font-bold text-gray-900">{product.price}</span>
             </div>
 
             {/* Quick Details */}

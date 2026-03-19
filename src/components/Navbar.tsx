@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { ChevronDown, Menu, X } from "lucide-react";
+import { ChevronDown, Menu, X, Twitter, Linkedin, Facebook } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import mainLogo from "@/assets/main_logo/main_con.png";
 
@@ -52,7 +52,7 @@ const Navbar = () => {
           </button>
         </nav>
 
-        <div className="hidden md:block ml-auto">
+        <div className="hidden md:flex items-center gap-3 ml-auto">
           <Button onClick={() => scrollTo("contact")} className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-lg px-5">
             Contact Us
           </Button>

@@ -17,8 +17,8 @@ const TeaBasket = () => {
   const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const handleAddToCart = () => {
-    navigate('/teas-collection');
+  const handleAddToCart = (image: string, name: string, price: string, type: string) => {
+    navigate('/teas-collection', { state: { image, name, price, type } });
     window.scrollTo(0, 0);
   };
 
@@ -239,79 +239,55 @@ const TeaBasket = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
             {/* Product Card 1 */}
-            <div className="bg-white rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden">
+            <div onClick={() => handleAddToCart(tea1, 'Morning Gold', '₹ 200', 'Black')} className="bg-white rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden cursor-pointer">
               <div className="p-6">
                 <img src={tea1} alt="Morning Gold" className="w-full h-48 object-cover rounded-lg mb-4" />
                 <p className="text-sm" style={{ color: '#6B7280' }}>Black</p>
                 <h3 className="text-xl font-bold text-gray-900 mt-2">Morning Gold</h3>
-                <p className="text-sm text-gray-600 mt-2 leading-relaxed">
-                  A robust black tea with malty notes, perfect for starting your day
-                </p>
+                <p className="text-sm text-gray-600 mt-2 leading-relaxed">A robust black tea with malty notes, perfect for starting your day</p>
                 <p className="text-lg font-bold text-gray-900 mt-4">₹ 200</p>
-                {/* <button onClick={handleAddToCart} className="mt-4 px-4 py-2 rounded-md border-2 flex items-center gap-2 transition-all" style={{ borderColor: '#5E7C5A', color: '#5E7C5A' }}>
-                  <ShoppingCart className="w-4 h-4" />
-                  Add to cart
-                </button> */}
               </div>
             </div>
 
             {/* Product Card 2 */}
-            <div className="bg-white rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden">
+            <div onClick={() => handleAddToCart(tea2, 'Spring Mist', '₹ 250', 'Green')} className="bg-white rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden cursor-pointer">
               <div className="p-6">
                 <img src={tea2} alt="Spring Mist" className="w-full h-48 object-cover rounded-lg mb-4" />
                 <p className="text-sm" style={{ color: '#6B7280' }}>Green</p>
                 <h3 className="text-xl font-bold text-gray-900 mt-2">Spring Mist</h3>
-                <p className="text-sm text-gray-600 mt-2 leading-relaxed">
-                  Light and refreshing green tea with delicate floral notes
-                </p>
+                <p className="text-sm text-gray-600 mt-2 leading-relaxed">Light and refreshing green tea with delicate floral notes</p>
                 <p className="text-lg font-bold text-gray-900 mt-4">₹ 250</p>
-                {/* <button onClick={handleAddToCart} className="mt-4 px-4 py-2 rounded-md border-2 flex items-center gap-2 transition-all" style={{ borderColor: '#5E7C5A', color: '#5E7C5A' }}>
-                  <ShoppingCart className="w-4 h-4" />
-                  Add to cart
-                </button> */}
               </div>
             </div>
 
             {/* Product Card 3 */}
-            <div className="bg-white rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden">
+            <div onClick={() => handleAddToCart(tea3, 'Evening Calm', '₹ 180', 'Herbal')} className="bg-white rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden cursor-pointer">
               <div className="p-6">
                 <img src={tea3} alt="Evening Calm" className="w-full h-48 object-cover rounded-lg mb-4" />
                 <p className="text-sm" style={{ color: '#6B7280' }}>Herbal</p>
                 <h3 className="text-xl font-bold text-gray-900 mt-2">Evening Calm</h3>
-                <p className="text-sm text-gray-600 mt-2 leading-relaxed">
-                  Soothing herbal blend with chamomile and lavender for relaxation
-                </p>
+                <p className="text-sm text-gray-600 mt-2 leading-relaxed">Soothing herbal blend with chamomile and lavender for relaxation</p>
                 <p className="text-lg font-bold text-gray-900 mt-4">₹ 180</p>
-                {/* <button onClick={handleAddToCart} className="mt-4 px-4 py-2 rounded-md border-2 flex items-center gap-2 transition-all" style={{ borderColor: '#5E7C5A', color: '#5E7C5A' }}>
-                  <ShoppingCart className="w-4 h-4" />
-                  Add to cart
-                </button> */}
               </div>
             </div>
 
             {/* Product Card 4 */}
-            <div className="bg-white rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden">
+            <div onClick={() => handleAddToCart(tea4, 'Daily Blend', '₹ 220', 'Blend')} className="bg-white rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden cursor-pointer">
               <div className="p-6">
                 <img src={tea4} alt="Daily Blend" className="w-full h-48 object-cover rounded-lg mb-4" />
                 <p className="text-sm" style={{ color: '#6B7280' }}>Blend</p>
                 <h3 className="text-xl font-bold text-gray-900 mt-2">Daily Blend</h3>
-                <p className="text-sm text-gray-600 mt-2 leading-relaxed">
-                  Balanced everyday tea with consistent flavor, cup after cup
-                </p>
+                <p className="text-sm text-gray-600 mt-2 leading-relaxed">Balanced everyday tea with consistent flavor, cup after cup</p>
                 <p className="text-lg font-bold text-gray-900 mt-4">₹ 220</p>
-                {/* <button onClick={handleAddToCart} className="mt-4 px-4 py-2 rounded-md border-2 flex items-center gap-2 transition-all" style={{ borderColor: '#5E7C5A', color: '#5E7C5A' }}>
-                  <ShoppingCart className="w-4 h-4" />
-                  Add to cart
-                </button> */}
               </div>
             </div>
           </div>
 
-          {/* <div className="text-center mt-12">
+          <div className="text-center mt-12">
             <button className="px-6 py-3 rounded-md border-2 border-gray-300 bg-white text-gray-700 hover:bg-gray-100 transition-colors">
               View All Teas →
             </button>
-          </div> */}
+          </div>
         </div>
       </section>
 
