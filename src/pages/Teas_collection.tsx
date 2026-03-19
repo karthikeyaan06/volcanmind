@@ -1,4 +1,4 @@
-import { Link, useLocation } from "react-router-dom";
+﻿import { Link, useLocation } from "react-router-dom";
 import { ShoppingCart, ChevronRight, Check, ArrowRight, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import teaBasketLogo from "@/assets/main_logo/TeaBasket_Logo-removebg-preview.png";
@@ -389,9 +389,7 @@ const TeasCollection = () => {
           </div>
 
           <div className="text-center mt-12">
-            <button className="border rounded-md px-6 py-3 hover:bg-gray-100 transition">
-              View All Teas →
-            </button>
+            <Link to="/all-teas" className="border rounded-md px-6 py-3 hover:bg-gray-100 transition inline-block">View All Teas</Link>
           </div>
         </div>
       </section>
@@ -440,3 +438,4 @@ const TeasCollection = () => {
 };
 
 export default TeasCollection;
+
