@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { ShoppingCart, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import teaPackImage from "@/assets/tea_pack.png";
@@ -14,12 +14,10 @@ import teaBasketLogo from "@/assets/main_logo/TeaBasket_Logo-removebg-preview.pn
 import { useState } from "react";
 
 const TeaBasket = () => {
-  const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const handleAddToCart = (image: string, name: string, price: string, type: string) => {
-    navigate('/teas-collection', { state: { image, name, price, type } });
-    window.scrollTo(0, 0);
+  const handleAddToCart = (_image: string, _name: string, _price: string, _type: string) => {
+    // teas-collection page unlinked
   };
 
   return (
@@ -283,11 +281,7 @@ const TeaBasket = () => {
             </div>
           </div>
 
-          <div className="text-center mt-12">
-            <button className="px-6 py-3 rounded-md border-2 border-gray-300 bg-white text-gray-700 hover:bg-gray-100 transition-colors">
-              View All Teas →
-            </button>
-          </div>
+
         </div>
       </section>
 

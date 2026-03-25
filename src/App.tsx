@@ -11,6 +11,7 @@ import NotFound from "./pages/NotFound";
 import TeaBasket from "./pages/TeaBasket";
 import TeasCollection from "./pages/Teas_collection";
 import DetailPage from "./pages/DetailPage";
+import LinkPreviewDemo from "./pages/LinkPreviewDemo";
 
 const queryClient = new QueryClient();
 
@@ -25,6 +26,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/teabasket" element={<TeaBasket />} />
           <Route path="/teas-collection" element={<TeasCollection />} />
+          <Route path="/link-preview" element={<LinkPreviewDemo />} />
           <Route path="/all-teas" element={<DetailPage />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
