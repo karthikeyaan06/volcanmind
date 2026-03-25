@@ -37,14 +37,19 @@ const ExperienceSection = () => {
             </p>
             <p className="text-xs text-muted-foreground italic">* Client names not disclosed due to NDA agreements</p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 items-start justify-items-start">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 items-start justify-items-start">
             {clientLogos.map((logo, index) => (
-              <div 
-                key={logo.name} 
-                className="flex items-center justify-center animate-fade-up"
+              <div
+                key={logo.name}
+                className="flex items-center justify-center w-full rounded-xl bg-white px-4 py-4 animate-fade-up"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <img src={logo.img} alt={logo.name} className="w-full h-auto max-h-10 object-contain" />
+                <img
+                  src={logo.img}
+                  alt={logo.name}
+                  className="w-full h-auto max-h-10 object-contain"
+                  style={{ filter: "contrast(1.2) brightness(1.05)" }}
+                />
               </div>
             ))}
           </div>
