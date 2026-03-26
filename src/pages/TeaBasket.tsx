@@ -59,9 +59,9 @@ const TeaBasket = () => {
                   <ShoppingCart className="w-5 h-5" />
                 </a> */}
                 <Link to="/">
-                  <Button className="bg-white/90 text-gray-900 hover:bg-white rounded-md px-5 border-2 border-white">
+                  {/* <Button className="bg-white/90 text-gray-900 hover:bg-white rounded-md px-5 border-2 border-white">
                     ← Volcanmind
-                  </Button>
+                  </Button> */}
                 </Link>
               </div>
             </div>

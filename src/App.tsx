@@ -23,8 +23,8 @@ const App = () => (
       <BrowserRouter>
         <ScrollToTop />
         <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/teabasket" element={<TeaBasket />} />
+          <Route path="/" element={<TeaBasket />} />
+          {/* <Route path="/teabasket" element={<TeaBasket />} /> */}
           <Route path="/teas-collection" element={<TeasCollection />} />
           <Route path="/link-preview" element={<LinkPreviewDemo />} />
           <Route path="/all-teas" element={<DetailPage />} />
