@@ -20,9 +20,9 @@ const clientLogos = [
 
 const ExperienceSection = () => {
   return (
-    <section id="experience" className="py-20 border-t border-border">
+    <section id="experience" className="py-20">
       <div className="container mx-auto px-6">
-        <div className="grid md:grid-cols-2 gap-12">
+        <div className="grid gap-12 rounded-[2rem] border border-slate-900/10 bg-white/58 px-6 py-10 shadow-[0_24px_70px_rgba(15,23,42,0.08)] backdrop-blur-lg md:grid-cols-2 md:px-10 md:py-12">
           <div>
             <h2 className="text-3xl font-semibold text-foreground mb-4">Experience Across Industries</h2>
             <p className="text-muted-foreground font-medium mb-4">Shaped by building across contexts and scales</p>

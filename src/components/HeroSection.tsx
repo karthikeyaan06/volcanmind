@@ -1,6 +1,5 @@
-import { ArrowRight, Play } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/mainpic.jpg";
 
 const HeroSection = () => {
   const scrollTo = (id: string) => {
@@ -8,9 +7,8 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="pt-12 pb-0 overflow-hidden relative">
-      <div className="absolute inset-0 opacity-60 bottom-1/3" style={{backgroundImage: 'radial-gradient(circle, rgba(150,150,150,0.4) 1.5px, transparent 1.5px)', backgroundSize: '20px 20px', maskImage: 'radial-gradient(ellipse 70% 70% at 50% 30%, black 30%, transparent 80%)', WebkitMaskImage: 'radial-gradient(ellipse 70% 70% at 50% 30%, black 30%, transparent 80%)'}}></div>
-      <div className="container mx-auto px-6 text-center relative z-10 mb-8">
+    <section className="relative overflow-hidden px-4 pb-10 pt-12 md:px-6">
+      <div className="container mx-auto relative z-10 mb-8 text-center">
         <a
           href="mailto:info@volcanmind.com?subject=Application%20for%20Engineering%20Position%20at%20VolcanMind"
           className="inline-flex items-center rounded-full cursor-pointer transition-all duration-300 group overflow-hidden mb-6"
@@ -49,8 +47,38 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className="mt-16 container mx-auto px-6">
-        <img src={heroImage} alt="Abstract geometric art representing digital systems" className="w-full h-auto object-cover max-h-[500px] object-center" />
+      <div className="container mx-auto px-0 md:px-6">
+        <div className="hero-visual-panel relative overflow-hidden rounded-[2rem] border border-slate-900/10 px-6 py-10 text-left shadow-[0_40px_120px_rgba(15,23,42,0.12)] md:px-10">
+          <div className="hero-visual-panel__glow" />
+          <div className="relative z-10 grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
+            <div className="max-w-2xl">
+              <p className="text-xs font-semibold uppercase tracking-[0.32em] text-primary/75">
+                Abstract geometric art representing digital systems
+              </p>
+              <h2 className="mt-4 max-w-xl text-2xl font-semibold leading-tight text-slate-900 md:text-4xl">
+                A living systems backdrop for products, services, and long-term digital craft.
+              </h2>
+              <p className="mt-4 max-w-xl text-sm leading-6 text-slate-600 md:text-base">
+                Motion, structure, and restraint echo the way VolcanMind builds: connected, durable, and designed to scale without losing clarity.
+              </p>
+            </div>
+
+            <div className="grid gap-3 sm:grid-cols-3 lg:grid-cols-1">
+              <div className="hero-metric-card">
+                <span className="hero-metric-label">Products</span>
+                <strong className="hero-metric-value">Deliberate</strong>
+              </div>
+              <div className="hero-metric-card">
+                <span className="hero-metric-label">Services</span>
+                <strong className="hero-metric-value">Grounded</strong>
+              </div>
+              <div className="hero-metric-card">
+                <span className="hero-metric-label">Systems</span>
+                <strong className="hero-metric-value">Enduring</strong>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

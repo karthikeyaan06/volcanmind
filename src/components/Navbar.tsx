@@ -19,7 +19,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-background/95 backdrop-blur border-b border-border">
+    <header className="sticky top-0 z-50 border-b border-slate-900/10 bg-white/70 backdrop-blur-xl">
       <div className="container mx-auto flex items-center h-16 px-6">
         <Link to="/" className="flex items-center gap-2 text-lg text-foreground">
           <img src={mainLogo} alt="VolcanMind Logo" className="w-10 h-10 object-contain" />
